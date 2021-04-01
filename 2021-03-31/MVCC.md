@@ -26,4 +26,5 @@ MVCC（多版本并发控制）是数据库引擎中一种处理读写冲突的�
     就会用到版本链去undo log里面查询指定版本的数据记录。
     2. Repeated Read（可重复读）隔离级别下的ReadView，执行第一个SELECT语句的时候，后续所有的SELECT操作都是复用  
        这个ReadView，将当前系统中的所有活跃事务复制到一个列表生成ReadView（注意是执行第一次SELECT语句生成ReadView）
-       
+
+(相关学习链接：https://blog.csdn.net/linshenyuan1213/article/details/81948964)
