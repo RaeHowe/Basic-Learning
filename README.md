@@ -40,4 +40,5 @@
 * TCP 的 keepalive 了解吗？说一说它和 HTTP 的 keepalive 的区别？
 
 ## 2021-04-13
-* 
+* 简述 TCP 滑动窗口以及重传机制
+
