@@ -46,7 +46,7 @@
     过了慢启动阈值后，拥塞避免算法可以避免窗口增长过快导致窗口拥塞，而是缓慢的增加调整到网络的最佳值。  
   * 拥塞状态时的算法
     TCP拥塞控制默认认为网络丢包是由于网络拥塞导致的，所以一般的TCP拥塞控制算法以丢包为网络进入拥塞状态的信号。  
-    对于丢包有两种判定方式，一种是超时重传RTO(Retransmission Timeout)超时，另一个是收到三个重复确认ACK。
+    <font color="red">对于丢包有两种判定方式，一种是超时重传RTO(Retransmission Timeout)超时，另一个是收到三个重复确认ACK。</font>
 
     * 超时重传RTO(Retransmission Timeout)超时，TCP会重传数据包。TCP认为这种情况比较糟糕，反应也比较强烈：
       1. 由于发生丢包，将慢启动阈值ssthresh设置为当前cwnd的一半，即ssthresh = cwnd / 2.

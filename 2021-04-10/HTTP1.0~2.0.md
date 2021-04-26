@@ -26,7 +26,7 @@
     http1.x中的header需要携带大量信息.而且每次都要重复发送；http2.0使用encode来减少传输的header大小.而且客户端和服务端可以各  
     自缓存(cache)一份header filed表,避免了header的重复传输,还可以减少传输的大小.
   * 服务端推送
-    可以通过解析html中的依赖,只能的返回所需的其他文件(css或者js等),而不用再发起一次请求.
+    可以通过解析html中的依赖,智能地返回所需的其他文件(css或者js渲染文件等),而不用再发起一次请求.
 
     ![avatar](./../PIC/http1.0-serverpush.jpg)
 
