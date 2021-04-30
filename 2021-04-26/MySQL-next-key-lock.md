@@ -15,5 +15,5 @@
       * 采用Next-key lock（也就是行锁与间隙锁的结合）的方式来避免了RR隔离级别下，针对于当前读  
         的场景下幻读的发生。
 
-  * 总结这部分内容来说，InnoDB在RR隔离级别下，快照读是通过MVCC和undo log来实现的；当前读是通过
+  * 总结这部分内容来说，InnoDB在RR隔离级别下，快照读是通过MVCC和undo log来实现的；当前读是通过  
     加record lock和gap lock来实现的。
